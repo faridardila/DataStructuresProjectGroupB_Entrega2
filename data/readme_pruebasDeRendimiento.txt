@@ -1,0 +1,4 @@
+Los archivos que se encuentran en esta carpeta contienen 1000 datos generados aleatoreamente; para
+hacer las pruebas de rendimiento a magnitudes de 10000, 100000, 1000000, 10000000 y 100000000 datos
+se extrajeron los datos de estos archivos varias veces, hasta conseguir insertar en las estructuras
+lineales la cantidad de datos requerida.
