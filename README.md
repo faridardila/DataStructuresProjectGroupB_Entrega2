@@ -3,7 +3,7 @@ Integrantes: Deivid Farid Ardila Herrera,  Diego Alejandro Arevalo Arias, Angel 
 
 ## Informacion de Directorios
 
-## app -> src -> main ->java/com/example/datastructuresprojectgroub
+## src -> app -> src -> main -> java/com/example/datastructuresprojectgroub
 
 ### Implementaciones estructuras de datos
 
@@ -25,7 +25,7 @@ Clases generales relacionada con cada una de las tablas como Artistas, Eventos, 
 
 Logica implementada para cada una de las vistas de la aplicacion asignacion de funcionalidad de botones procesamiento de entradas, etc.
 
-## app -> src -> main -> res -> Layout
+## src -> app -> src -> main -> res -> Layout
 
 Se encuentran los archivos en formato xml con las vistas graficas de la app.
 
