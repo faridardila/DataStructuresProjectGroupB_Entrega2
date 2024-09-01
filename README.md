@@ -1,4 +1,4 @@
-# DataStructuresProjectGroupB_Entrega1
+# DataStructuresProjectGroupB_Entrega2
 Integrantes: Deivid Farid Ardila Herrera,  Diego Alejandro Arevalo Arias, Angel David Beltran García, Cristofer Damian Camilo Ordonez Osa.
 
 ## Informacion de Directorios
