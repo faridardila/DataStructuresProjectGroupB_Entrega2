@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:layout_weight="1"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/roslindale_condensed_medium_edu"
+        android:paddingHorizontal="45dp"
+        android:paddingVertical="20dp"
+        android:text="Crea tu Evento"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:theme="@style/Theme.DataStructureProjectGroupB.ActivityTitles"
+        android:visibility="visible" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="30dp"
+            android:orientation="vertical"
+            android:theme="@style/TextInputEditText">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layoutNombreEvento"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre del evento"
+                android:paddingVertical="15dp"
+                android:textColorHint="@color/gris_claro_hint"
+                app:boxBackgroundColor="@color/gris_oscuro_background_edit_text"
+                app:boxStrokeColor="@drawable/cambio_color_text_input_edit_text"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/white">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextNombreEvento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/jost_regular"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/white" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layoutFechaEvento"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Fecha"
+                android:paddingVertical="15dp"
+                android:textColorHint="@color/gris_claro_hint"
+                app:boxBackgroundColor="@color/gris_oscuro_background_edit_text"
+                app:startIconDrawable="@drawable/icono_calendario_fecha"
+                app:startIconTint="@color/white"
+                app:boxStrokeColor="@drawable/cambio_color_text_input_edit_text"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/white">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextFechaEvento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:fontFamily="@font/jost_regular"
+                    android:inputType="none"
+                    android:maxLines="1"
+                    android:textColor="@color/white" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layoutPlataformaEvento"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Plataforma"
+                android:paddingVertical="15dp"
+                android:textColorHint="@color/gris_claro_hint"
+                app:startIconDrawable="@drawable/icono_campana"
+                app:startIconTint="@color/white"
+                app:boxBackgroundColor="@color/gris_oscuro_background_edit_text"
+                app:boxStrokeColor="@drawable/cambio_color_text_input_edit_text"
+                app:endIconTint="@color/white">
+
+                <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                    android:id="@+id/spinnerPlataformaEvento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/jost_regular"
+                    android:inputType="none"
+                    android:textColor="@color/white"
+                    app:dropDownBackgroundTint="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layoutCostoEvento"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Costo"
+                android:paddingVertical="15dp"
+                android:textColorHint="@color/gris_claro_hint"
+                app:boxBackgroundColor="@color/gris_oscuro_background_edit_text"
+                app:boxStrokeColor="@drawable/cambio_color_text_input_edit_text"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/white"
+                app:startIconDrawable="@drawable/icono_dinero_costo"
+                app:startIconTint="@color/white" >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextCostoEvento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/jost_regular"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:textColor="@color/white" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutHorario"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layoutHoraInicio"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:hint="Hora inicio"
+                    android:paddingVertical="15dp"
+                    android:textColorHint="@color/gris_claro_hint"
+                    app:boxBackgroundColor="@color/gris_oscuro_background_edit_text"
+                    app:boxStrokeColor="@drawable/cambio_color_text_input_edit_text"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/white"
+                    app:startIconDrawable="@drawable/icono_reloj_horario"
+                    app:startIconTint="@color/white">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editTextHoraInicioEvento"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:editable="false"
+                        android:fontFamily="@font/jost_regular"
+                        android:inputType="none"
+                        android:maxLines="1"
+                        android:textColor="@color/white" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layoutHoraFinal"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:hint="Hora final"
+                    android:paddingVertical="15dp"
+                    android:textColorHint="@color/gris_claro_hint"
+                    app:boxBackgroundColor="@color/gris_oscuro_background_edit_text"
+                    app:boxStrokeColor="@drawable/cambio_color_text_input_edit_text"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/white"
+                    app:startIconDrawable="@drawable/icono_reloj_horario"
+                    app:startIconTint="@color/white">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editTextHoraFinalEvento"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:editable="false"
+                        android:fontFamily="@font/jost_regular"
+                        android:inputType="none"
+                        android:maxLines="1"
+                        android:textColor="@color/white" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layoutTipoEvento"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tipo de evento"
+                android:paddingVertical="15dp"
+                android:textColorHint="@color/gris_claro_hint"
+                app:boxBackgroundColor="@color/gris_oscuro_background_edit_text"
+                app:boxStrokeColor="@drawable/cambio_color_text_input_edit_text"
+                app:endIconTint="@color/white">
+
+                <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                    android:id="@+id/spinnerCategoriaEvento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/jost_regular"
+                    android:inputType="none"
+                    android:textColor="@color/white"
+                    app:dropDownBackgroundTint="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layoutDescripcionEvento"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Descripción"
+                android:paddingVertical="15dp"
+                android:textColorHint="@color/gris_claro_hint"
+                app:boxBackgroundColor="@color/gris_oscuro_background_edit_text"
+                app:boxStrokeColor="@drawable/cambio_color_text_input_edit_text"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/white"
+                app:startIconDrawable="@drawable/icono_papel_descripcion"
+                app:startIconTint="@color/white">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextDescripcionEvento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/jost_regular"
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/white" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/layoutBotones"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.9"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/botonCancelarCrearEvento"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:autoSizeMaxTextSize="18sp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginVertical="30dp"
+            style="@style/Theme.DataStructureProjectGroupB.Botones"
+            android:layout_height="match_parent"
+            android:text="Cancelar"
+            android:textSize="8sp"/>
+
+        <Button
+            android:id="@+id/botonAceptarCrearEvento"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:autoSizeMaxTextSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginVertical="30dp"
+            style="@style/Theme.DataStructureProjectGroupB.Botones"
+            android:text="Aceptar"
+            android:textSize="8sp"/>
+    </LinearLayout>
+
+</LinearLayout>

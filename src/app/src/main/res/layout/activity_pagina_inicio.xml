@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".entidades.pagina_inicio.PaginaInicio">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="4dp"
+        android:background="@drawable/background_barra_principal"
+        app:elevation="0dp"
+        app:itemIconTint="@drawable/cambio_color_iconos_barra_principal"
+        app:itemTextAppearanceActive="@style/BottomNavigationViewTextStyle"
+        app:itemTextAppearanceInactive="@style/BottomNavigationViewTextStyle"
+        app:itemTextColor="@drawable/cambio_color_iconos_barra_principal"
+        app:labelVisibilityMode="selected"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/menu_principal" >
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <FrameLayout
+        android:id="@+id/frameContenedor"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu"></FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
