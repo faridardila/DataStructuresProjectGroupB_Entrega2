@@ -199,7 +199,7 @@ public class DescubrirFragment extends Fragment {
         DynamicUnsortedList<Evento> eventosOrdenados = new DynamicUnsortedList<Evento>();
 
         if (Bocu.ordenEventos != null) {
-            switch (Bocu.ordenEventos) { //SI NO RESPONDO ES PORQUE NO ESTOY
+            switch (Bocu.ordenEventos) {
                 case ALFABETICO_A_Z:
                     eventosOrdenados = new MaxHeapAlfabeticoEventos(eventosFiltrados).heapSort();
                     break;
