@@ -1,5 +1,5 @@
 # DataStructuresProjectGroupB_Entrega2
-Integrantes: Deivid Farid Ardila Herrera,  Diego Alejandro Arevalo Arias, Angel David Beltran García, Cristofer Damian Camilo Ordonez Osa.
+Integrantes: Deivid Farid Ardila Herrera,  Diego Alejandro Arevalo Arias, Angel David Beltran García y Cristofer Damian Camilo Ordonez Osa.
 
 ## Informacion de Directorios
 
@@ -7,7 +7,7 @@ Integrantes: Deivid Farid Ardila Herrera,  Diego Alejandro Arevalo Arias, Angel 
 
 ### Implementaciones estructuras de datos
 
-En esta carpeta se encuentran las implementaciones de las estructuras de datos realizadas por los integrantes las cuales se van a implementar en el proyecto.
+En esta carpeta se encuentran las implementaciones de las estructuras de datos realizadas, las cuales, se van a implementar en el proyecto.
 
 ### adaptadores
 
@@ -15,15 +15,15 @@ Adaptadores para mostrar la vista de un solo elemento de los eventos tanto en la
 
 ### db
 
-Se encuentra la base de datos y las tablas en SQLite y las conexiones por java para accede a estas tablas.
+Se encuentra la base de datos, las tablas en SQLite y las conexiones por Java para acceder a estas tablas.
 
 ### entidades
 
-Clases generales relacionada con cada una de las tablas como Artistas, Eventos, Usuarios.
+Clases generales relacionadas con cada una de las tablas: Artistas, Eventos y Usuarios.
 
 ### otros archivos
 
-Logica implementada para cada una de las vistas de la aplicacion asignacion de funcionalidad de botones procesamiento de entradas, etc.
+Logica implementada para cada una de las vistas de la aplicacion, asignacion de funcionalidad de botones, procesamiento de entradas, etc.
 
 ## src -> app -> src -> main -> res -> Layout
 
@@ -35,8 +35,8 @@ Se encuentran los datos con los cuales se realizaron las pruebas.
 
 ## Docs
 
-Contiene el informe realizado con la informacion general de el proyecto y los resultados de las pruebas.
+Contiene los informes realizados con la informacion general del proyecto y los resultados de las pruebas.
 
 ## Dist
 
-Contiene la aplicacion en formato .apk.
+Contiene las aplicaciones de cada entrega en formato .apk.
