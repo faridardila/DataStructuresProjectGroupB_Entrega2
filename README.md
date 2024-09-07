@@ -15,7 +15,7 @@ Adaptadores para mostrar la vista de un solo elemento de los eventos tanto en la
 
 ### db
 
-Se encuentra la base de datos y las tablas en SqLite y las conexiones por java para accede a estas tablas.
+Se encuentra la base de datos y las tablas en SQLite y las conexiones por java para accede a estas tablas.
 
 ### entidades
 
